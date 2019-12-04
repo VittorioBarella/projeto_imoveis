@@ -1,0 +1,45 @@
+body {
+  background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+}
+
+.card {
+  height: 30rem;
+  width: 15rem;
+  margin-top: 50px;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.card-body {
+  padding: 3rem 0 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.9rem;
+}
+
+.container-fluid.row {
+  padding-top: 6rem;
+}
+
+.card-img-top {
+  transform: scale(1);
+}
+
+.btn-visualizar {
+  padding: 10px;
+  color: #5bc4bf;
+  border-color: #5bc4bf;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid;
+  transition: color 0.15s;
+}
+
+.btn-visualizar:hover {
+  background-color: #5bc4bf;
+  color: #fff;
+}

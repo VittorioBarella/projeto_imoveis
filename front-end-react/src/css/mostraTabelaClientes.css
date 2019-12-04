@@ -1,0 +1,33 @@
+/*Página de estilos para tabela de clientes */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.tabelaClientes {
+  float: left;
+  width: 80%;
+  margin: 30px 10%;
+  text-align: center;
+}
+.tabelaClientes thead tr:first-child {
+  background: black;
+  color: white;
+  font-weight: bold;
+  line-height: 4.6em;
+}
+.tabelaClientes tbody tr:nth-child(2n) {
+  background: #ccc;
+}
+.tabelaClientes tbody td {
+  padding: 20px;
+}
+
+.titulo-mostra-tabela {
+  margin-left: 155px;
+}
+
+.btn-danger {
+  margin-top: 20px;
+}
