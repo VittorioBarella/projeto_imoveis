@@ -1,6 +1,6 @@
 //MOSTRA CLIENTES MONTA A TABELA.
 import React from "react";
-export default class MostraClientes extends React.Component {
+export default class MontaTabelaClientes extends React.Component {
   render() {
     return (
       <div>
@@ -42,6 +42,6 @@ export default class MostraClientes extends React.Component {
     );
   }
 }
-MostraClientes.defaultProps = {
+MontaTabelaClientes.defaultProps = {
   arrayClientes: []
 };

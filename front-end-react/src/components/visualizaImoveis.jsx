@@ -5,16 +5,15 @@ import "../css/pure-min.css";
 import "../css/side-menu.css";
 import "../css/mostraTabelaImoveis.css";
 
-import MostraImoveis from "./MostraImoveis.jsx";
+import MontaTabelaImoveis from "./MontaTabelaImoveis.jsx";
 
 class visualizaImoveis extends Component {
   constructor() {
     super();
     this.state = {
-      db: []
+      lista: []
     };
   }
-
   componentDidMount() {
     fetch("http://localhost/projeto_imoveis/api/adm/imoveis")
       .then(response => response.json())
@@ -25,11 +24,12 @@ class visualizaImoveis extends Component {
         console.log(responseJson);
       });
   }
+
   render() {
     return (
       <div>
         <h1 className="titulo-mostra-tabela"> Seus Imóveis: </h1>
-        <MostraImoveis arrayImoveis={this.state.db}></MostraImoveis>
+        <MontaTabelaImoveis arrayImoveis={this.state.db}></MontaTabelaImoveis>
       </div>
     );
   }

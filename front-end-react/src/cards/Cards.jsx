@@ -3,8 +3,6 @@ import Card from "./CardUI";
 
 import img1 from "../assets/clientes.jpeg";
 import img2 from "../assets/casa.jpg";
-import img3 from "../assets/apartamento.jpeg";
-import img4 from "../assets/studio.jpg";
 
 class Cards extends Component {
   render() {
@@ -29,7 +27,7 @@ class Cards extends Component {
               subtitle="Clique aqui para ver a sua lista de imóveis cadastrados."
               btn={{
                 label: "Visualizar Imóveis",
-                to: "/visualizaCasas"
+                to: "/visualizaImoveis"
               }}
             />
           </div>

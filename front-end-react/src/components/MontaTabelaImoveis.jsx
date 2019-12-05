@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class MostraImoveis extends React.Component {
+export default class MontaTabelaImoveis extends React.Component {
   render() {
     return (
       <div>
@@ -57,6 +57,6 @@ export default class MostraImoveis extends React.Component {
     );
   }
 }
-MostraImoveis.defaultProps = {
+MontaTabelaImoveis.defaultProps = {
   arrayImoveis: []
 };

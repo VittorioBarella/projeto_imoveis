@@ -3,11 +3,11 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { changeCadastraImoveisTitle } from "../actions";
 
-import {Form, Label, Input, Button, Select } from "../css/styles";
+import { Form, Label, Input, Button, Select } from "../css/styles";
 import {} from "../css/styles";
 import "../css/pure-min.css";
 import "../css/side-menu.css";
-
+import $ from "jquery";
 class cadastrarImoveis extends Component {
   state = {
     titleValue: ""
@@ -116,9 +116,10 @@ class cadastrarImoveis extends Component {
             <Input className="estado" type="text" />
           </div>
           <div className="botao-Cadastrar">
-            <Button 
-            type="button"
-            className="btn btn-primary"> Cadastrar </Button>
+            <Button type="button" className="btn btn-primary">
+              {" "}
+              Cadastrar{" "}
+            </Button>
           </div>
         </div>
       </Form>
@@ -132,7 +133,4 @@ const mapStateToProps = store => ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ changeCadastraImoveisTitle }, dispatch);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(cadastrarImoveis);
+export default connect(mapStateToProps, mapDispatchToProps)(cadastrarImoveis);

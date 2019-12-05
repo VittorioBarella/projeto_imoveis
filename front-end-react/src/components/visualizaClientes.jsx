@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import {} from "../css/styles";
+
 import "../css/pure-min.css";
 import "../css/side-menu.css";
 import "../css/mostraTabelaClientes.css";
 
-import MostraClientes from "./MostraClientes.jsx";
+import MontaTabelaClientes from "./MontaTabelaClientes.jsx";
 
 class visualizaClientes extends Component {
   constructor() {
@@ -13,7 +14,6 @@ class visualizaClientes extends Component {
       db: []
     };
   }
-
   componentDidMount() {
     fetch("http://localhost/projeto_imoveis/api/adm/clientes")
       .then(response => response.json())
@@ -24,11 +24,14 @@ class visualizaClientes extends Component {
         console.log(responseJson);
       });
   }
+
   render() {
     return (
       <div>
         <h1 className="titulo-mostra-tabela"> Seus Clientes: </h1>
-        <MostraClientes arrayClientes={this.state.db}></MostraClientes>
+        <MontaTabelaClientes
+          arrayClientes={this.state.db}
+        ></MontaTabelaClientes>
       </div>
     );
   }
