@@ -2,9 +2,7 @@ import Card from "./cards/Cards.jsx";
 import cadastrarClientes from "./components/cadastrarClientes.jsx";
 import cadastrarImoveis from "./components/cadastrarImoveis.jsx";
 import visualizaClientes from "./components/visualizaClientes.jsx";
-import visualizaCasas from "./components/visualizaCasas.jsx";
-import visualizaApartamentos from "./components/visualizaApartamentos.jsx";
-import visualizaStudios from "./components/visualizaStudios.jsx";
+import visualizaImoveis from "./components/visualizaImoveis.jsx";
 
 const routes = [
   {
@@ -25,16 +23,8 @@ const routes = [
     component: visualizaClientes
   },
   {
-    path: "/visualizaCasas",
-    component: visualizaCasas
-  },
-  {
-    path: "/visualizaApartamentos",
-    component: visualizaApartamentos
-  },
-  {
-    path: "/visualizaStudios",
-    component: visualizaStudios
+    path: "/visualizaImoveis",
+    component: visualizaImoveis
   }
 ];
 

@@ -1,33 +1,33 @@
-/*Página de estilos para tabela de clientes */
+/*Página de estilos para tabela de imóveis */
 
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-.tabelaClientes {
+.tabelaImoveis {
   float: left;
-  width: 80%;
+  width: 90%;
   margin: 30px 10%;
   text-align: center;
 }
-.tabelaClientes thead tr:first-child {
+.tabelaImoveis thead tr:first-child {
   background: #5bc4bf;
   color: white;
   font-weight: bold;
   line-height: 4.6em;
 }
-.tabelaClientes tbody tr:nth-child(2n) {
+.tabelaImoveis tbody tr:nth-child(2n) {
   background: #ccc;
 }
-.tabelaClientes tbody td {
-  padding: 20px;
+.tabelaImoveis tbody td {
+  padding: 5px;
 }
 
 .titulo-mostra-tabela {
   margin-left: 155px;
 }
 
-.btn-clientes {
-  margin-top: 20px;
+.btn-imoveis {
+  margin-top: 5px;
 }

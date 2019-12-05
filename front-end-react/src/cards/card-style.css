@@ -6,6 +6,7 @@ body {
   height: 30rem;
   width: 15rem;
   margin-top: 50px;
+  margin-left: 150px;
 }
 
 .card:hover {

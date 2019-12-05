@@ -4,14 +4,14 @@ export default class MostraClientes extends React.Component {
   render() {
     return (
       <div>
-        <table className="tabelaClientes">
+        <table className="tabelaClientes table-bordered">
           <thead>
             <tr>
               <td>#</td>
-              <td>id do Cliente</td>
-              <td>Nome do Cliente</td>
-              <td>Telefone do Cliente</td>
-              <td>Email do Cliente</td>
+              <td>id</td>
+              <td>Nome</td>
+              <td>Telefone</td>
+              <td>Email</td>
               <td>Editar</td>
               <td>Apagar</td>
             </tr>
@@ -31,7 +31,7 @@ export default class MostraClientes extends React.Component {
                     Editar
                   </button>
                 </td>
-                <button type="button" class="btn btn-danger">
+                <button type="button" class="btn btn-danger btn-clientes">
                   Apagar
                 </button>
               </tr>

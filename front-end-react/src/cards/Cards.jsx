@@ -11,7 +11,7 @@ class Cards extends Component {
     return (
       <div className="container-fluid d-flex justify-content-center">
         <div className="row">
-          <div className="col-md-2 ">
+          <div className="col-md-6 ">
             <Card
               imgsrc={img1}
               title="Clientes"
@@ -22,36 +22,14 @@ class Cards extends Component {
               }}
             />
           </div>
-          <div className="col-md-2 ">
+          <div className="col-md-6 ">
             <Card
               imgsrc={img2}
-              title="Casas"
-              subtitle="Clique aqui para ver a sua lista de casas cadastradas."
+              title="Imóveis"
+              subtitle="Clique aqui para ver a sua lista de imóveis cadastrados."
               btn={{
-                label: "Visualizar Casas",
+                label: "Visualizar Imóveis",
                 to: "/visualizaCasas"
-              }}
-            />
-          </div>
-          <div className="col-md-4 ">
-            <Card
-              imgsrc={img3}
-              title="Apartamentos"
-              subtitle="Clique aqui para ver a sua lista de apartamentos cadastrados."
-              btn={{
-                label: "Visualizar Apartamentos",
-                to: "/visualizaApartamentos"
-              }}
-            />
-          </div>
-          <div className="col-md-4 ">
-            <Card
-              imgsrc={img4}
-              title="Studios"
-              subtitle="Clique aqui para ver a sua lista de studios cadastrados."
-              btn={{
-                label: "Visualizar Studios",
-                to: "/visualizaStudios"
               }}
             />
           </div>

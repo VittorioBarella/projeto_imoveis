@@ -40,18 +40,8 @@ function sidebar() {
                 </Link>
               </li>
               <li className="pure-menu-item">
-                <Link to="/visualizaCasas" className="pure-menu-link">
-                  Casas
-                </Link>
-              </li>
-              <li className="pure-menu-item">
-                <Link to="/visualizaApartamentos" className="pure-menu-link">
-                  Apartamentos
-                </Link>
-              </li>
-              <li className="pure-menu-item">
-                <Link to="/visualizaStudios" className="pure-menu-link">
-                  Studios
+                <Link to="/visualizaImoveis" className="pure-menu-link">
+                  Imóveis
                 </Link>
               </li>
             </ul>
