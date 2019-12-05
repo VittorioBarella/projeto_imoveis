@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "f5eab84f-ccb4-4330-a7aa-6028be9e02c4",
+		"name": "imoveis-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis/7",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \t\n\t    \"nomeImovel\": \"Duos\",\n\t    \"dataCadastramentoImovel\": \"02\",\n\t    \"statusImovel\": \"Disponível\",\n\t    \"cep\": \"9999999\",\n\t    \"rua\": \"Qualquer coisa\",\n\t    \"bairro\": \"tambem nao sei\",\n\t    \"cidade\": \"Porto Alegre\",\n\t    \"estado\": \"Amapá\",\n\t    \"fotoImovel\": \"...\",\n\t    \"descricaoImovel\": \"Imovel localizado na zona oeste \"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \t\n\t    \"nomeImovel\": \"Carlos Gomes Center\",\n\t    \"dataCadastramentoImovel\": \"01\",\n\t    \"statusImovel\": \"Disponível\",\n\t    \"cep\": \"1016594941\",\n\t    \"rua\": \"Qualquer coisa\",\n\t    \"bairro\": \"tambem nao sei\",\n\t    \"cidade\": \"Rio de Janeiro\",\n\t    \"estado\": \"Rio de Janeiro\",\n\t    \"fotoImovel\": \"...\",\n\t    \"descricaoImovel\": \"Imovel localizado na zona norte \"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT ",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis/9",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"idImoveis\": 9,\n        \"nomeImovel\": \"QuiInTal\",\n        \"dataCadastramentoImovel\": 2,\n        \"statusImovel\": \"Para alugar\",\n        \"cep\": \"9926194941\",\n        \"rua\": \"Soledade\",\n        \"bairro\": \"Bom fim\",\n        \"cidade\": \"Porto Alegre\",\n        \"estado\": \"Rio Grande do Sul \",\n        \"fotoImovel\": \"...\",\n        \"descricaoImovel\": \"Imovel localizado na zona leste \"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis/10",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"idImoveis\": 10,\n        \"nomeImovel\": \"Paragem Verdes Campos\",\n        \"dataCadastramentoImovel\": 6,\n        \"statusImovel\": \"Disponível\",\n        \"cep\": \"9419519419\",\n        \"rua\": \"Free Way\",\n        \"bairro\": \"Glorinha\",\n        \"cidade\": \"Gravataí\",\n        \"estado\": \"Rio Grande do Sul\",\n        \"fotoImovel\": \"...\",\n        \"descricaoImovel\": \"Imovel localizado na zona oeste \"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis/5",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idImoveis\": 5,\n    \"nomeImovel\": \"Firenze\",\n    \"dataCadastramentoImovel\": 100,\n    \"statusImovel\": \"Para alugar\",\n    \"cep\": \"88888\",\n    \"rua\": \"sei la\",\n    \"bairro\": \"tambem nao sei\",\n    \"cidade\": \"Porto Alegre\",\n    \"estado\": \"Rio Grande do Sul\",\n    \"fotoImovel\": \"...\",\n    \"descricaoImovel\": \"Imovel localizado na zona oeste \"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/imoveis/9",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idImoveis\": 9,\n    \"nomeImovel\": \"QuiInTal\",\n    \"dataCadastramentoImovel\": 2,\n    \"statusImovel\": \"Para alugar\",\n    \"cep\": \"9926194941\",\n    \"rua\": \"Soledade\",\n    \"bairro\": \"Bom fim\",\n    \"cidade\": \"Porto Alegre\",\n    \"estado\": \"Rio Grande do Sul \",\n    \"fotoImovel\": \"...\",\n    \"descricaoImovel\": \"Imovel localizado na zona leste \"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/imoveis/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"imoveis",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

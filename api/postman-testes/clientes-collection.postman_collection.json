@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "45e05ec3-c720-4eee-8296-987340cc9c97",
+		"name": "clientes-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ab2fc24-9fbb-47f8-aa74-7cbd39517a1c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Vittório\",\n    \"telefone\": 51992458071,\n    \"email\": \"vittorio.br@hotmail.com\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Lucas Bauer\",\n    \"telefone\": 51942657,\n    \"email\": \"lucas.bauer@hotmail.com\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Nara Regina\",\n    \"telefone\": 51991141470,\n    \"email\": \"narandradefa@yahoo.com\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Arildo\",\n    \"telefone\": 51993183057,\n    \"email\": \"arildo.azevedo@bol.com.br\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/6",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 6,\n  \"nome\": \"Vittório de Andrade Barella\",\n  \"telefone\": 992458071,\n  \"email\": \"vittorio.br@hotmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/7",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 7,\n    \"nome\": \"Lucas Bauer\",\n    \"telefone\": 51942657,\n    \"email\": \"lucas.imortaltricolor@hotmail.com\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/8",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 8,\n    \"nome\": \"Nara Regina Franco\",\n    \"telefone\": 51991141470,\n    \"email\": \"narandradefa@yahoo.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/9",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 9,\n    \"nome\": \"Arildo\",\n    \"telefone\": \"51993183057\",\n    \"email\": \"arildo.colorado@gmail.com.br\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/9",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 9,\n    \"nome\": \"Arildo\",\n    \"telefone\": \"4294967295\",\n    \"email\": \"arildo.colorado@gmail.com.br\"\n \t\n }"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/8",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 8,\n        \"nome\": \"Nara Regina Franco\",\n        \"telefone\": \"4294967295\",\n        \"email\": \"narandradefa@yahoo.com\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/7",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 7,\n        \"nome\": \"Lucas Bauer\",\n        \"telefone\": 51942657,\n        \"email\": \"lucas.imortaltricolor@hotmail.com\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/projeto_imoveis/api/adm/clientes/5",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 5,\n        \"nome\": \"Robson\",\n        \"telefone\": 5198888,\n        \"email\": \"robsonjr@hotmail.com\"\n    }"
+						},
+						"url": {
+							"raw": "http://localhost/projeto_imoveis/api/adm/clientes/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"projeto_imoveis",
+								"api",
+								"adm",
+								"clientes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
