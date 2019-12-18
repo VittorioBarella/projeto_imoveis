@@ -7,7 +7,7 @@ import { Form, Label, Input, Button, Select } from "../css/styles";
 import {} from "../css/styles";
 import "../css/pure-min.css";
 import "../css/side-menu.css";
-import $ from "jquery";
+
 class cadastrarImoveis extends Component {
   state = {
     titleValue: ""

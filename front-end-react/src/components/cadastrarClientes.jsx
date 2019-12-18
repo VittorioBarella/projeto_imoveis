@@ -6,7 +6,7 @@ import { changeCadastraClientesTitle } from "../actions";
 import { Form, Label, Input, Button } from "../css/styles";
 import "../css/pure-min.css";
 import "../css/side-menu.css";
-import $ from "jquery";
+
 class cadastrarClientes extends Component {
   constructor() {
     super();
@@ -16,13 +16,24 @@ class cadastrarClientes extends Component {
       telefone: "",
       email: ""
     };
-    this.enviaForm = this.enviaForm.bind(this);
     this.setNome = this.setNome.bind(this);
     this.setTelefone = this.setTelefone.bind(this);
     this.setEmail = this.setEmail.bind(this);
   }
   state = {
     titleValue: ""
+  };
+  handleSubmit(event) {
+    alert("Um nome foi enviado: " + this.state.value);
+    event.preventDefault();
+  }
+
+  onChange = (field, ev) => {
+    const { form } = this.state;
+    form[field] = ev.target.value;
+    this.setState({ form }, () => {
+      this.validar();
+    });
   };
 
   changeCadastraClientesTitle = event => {
@@ -32,34 +43,14 @@ class cadastrarClientes extends Component {
   };
 
   componentDidMount() {
-    $.ajax({
-      url: "http://localhost/projeto_imoveis/api/adm/clientes",
-      dataType: "json",
-      success: function(resposta) {
-        this.setState({ lista: resposta });
-      }.bind(this)
-    });
-  }
-
-  enviaForm(evento) {
-    evento.preventDefault();
-    $.ajax({
-      url: "http://localhost/projeto_imoveis/api/adm/clientes",
-      contentType: "application/json",
-      dataType: "json",
-      type: "post",
-      data: JSON.stringify({
-        nome: this.state.nome,
-        telefone: this.state.telefone,
-        email: this.state.email
-      }),
-      success: function(resposta) {
-        console.log("Sucesso !");
-      },
-      error: function(resposta) {
-        console.log("Erro");
-      }
-    });
+    fetch("http://localhost/projeto_imoveis/api/adm/clientes")
+      .then(response => response.json())
+      .then(responseJson => {
+        this.setState({
+          db: responseJson
+        });
+        console.log(responseJson);
+      });
   }
 
   setNome(evento) {
@@ -75,11 +66,7 @@ class cadastrarClientes extends Component {
     const { changeCadastraClientesTitle, newValue } = this.props;
     return (
       <div className="page-cadastraClientes">
-        <Form
-          className="formularioClientes"
-          onSubmit={this.enviaForm.bind(this)}
-          method="post"
-        >
+        <Form className="formularioClientes" method="post">
           <div className="header-title">
             <header
               onChange={this.changeCadastraClientesTitle}
