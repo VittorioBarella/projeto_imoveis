@@ -12,29 +12,31 @@ class cadastrarClientes extends Component {
     super();
     this.state = {
       lista: [],
-      nome: "",
-      telefone: "",
-      email: ""
+      titleValue: "",
+      dados: { 
+        nome: "",
+        telefone: "",
+        email: ""
+      } 
     };
-    this.setNome = this.setNome.bind(this);
-    this.setTelefone = this.setTelefone.bind(this);
-    this.setEmail = this.setEmail.bind(this);
-  }
-  state = {
-    titleValue: ""
-  };
-  handleSubmit(event) {
-    alert("Um nome foi enviado: " + this.state.value);
-    event.preventDefault();
   }
 
-  onChange = (field, ev) => {
-    const { form } = this.state;
-    form[field] = ev.target.value;
-    this.setState({ form }, () => {
-      this.validar();
-    });
-  };
+  // QUANDO A ARROU FUNCTION RECEBE SÓ UM PARAMETRO, ELA NÃO PRECISA DE PARENTESES. 
+  handleChange = event => {
+    const { name,value } = event.target;
+    this.setState( state => ({
+      dados: {
+        ...state.dados,
+        [name] : value   
+      }
+    })) 
+
+  }
+
+  onSubmit = () =>{
+    console.log(this.state.dados)
+    // ESCREVER AQUI, O POST. 
+  }
 
   changeCadastraClientesTitle = event => {
     this.setState({
@@ -53,15 +55,7 @@ class cadastrarClientes extends Component {
       });
   }
 
-  setNome(evento) {
-    this.setState({ nome: evento.target.value });
-  }
-  setTelefone(evento) {
-    this.setState({ telefone: evento.target.value });
-  }
-  setEmail(evento) {
-    this.setState({ email: evento.target.value });
-  }
+  
   render() {
     const { changeCadastraClientesTitle, newValue } = this.props;
     return (
@@ -90,8 +84,8 @@ class cadastrarClientes extends Component {
               className="nomeCliente"
               id="nome"
               name="nome"
-              value={this.state.nome}
-              onChange={this.setNome}
+              value={this.state.dados.nome}
+              onChange={this.handleChange}
             />
           </div>
 
@@ -105,8 +99,8 @@ class cadastrarClientes extends Component {
               OnKeyPress="formatar('## #####-####', this)"
               pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
               name="telefone"
-              value={this.state.telefone}
-              onChange={this.setTelefone}
+              value={this.state.dados.telefone}
+              onChange={this.handleChange}
             />
           </div>
 
@@ -118,13 +112,13 @@ class cadastrarClientes extends Component {
               placeholder="email.@email.com"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               name="email"
-              value={this.state.email}
-              onChange={this.setEmail}
+              value={this.state.dados.email}
+              onChange={this.handleChange}
             />
           </div>
 
           <div className="botao-Cadastrar">
-            <Button type="submit" className="btn btn-primary">
+            <Button type="submit" className="btn btn-primary" onClick={this.onSubmit}>
               {" "}
               Cadastrar{" "}
             </Button>
