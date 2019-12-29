@@ -13,30 +13,43 @@ class cadastrarClientes extends Component {
     this.state = {
       lista: [],
       titleValue: "",
-      dados: { 
+      dados: {
         nome: "",
         telefone: "",
         email: ""
-      } 
+      }
     };
   }
 
-  // QUANDO A ARROU FUNCTION RECEBE SÓ UM PARAMETRO, ELA NÃO PRECISA DE PARENTESES. 
+  // QUANDO A ARROU FUNCTION RECEBE SÓ UM PARAMETRO, ELA NÃO PRECISA DE PARENTESES.
   handleChange = event => {
-    const { name,value } = event.target;
-    this.setState( state => ({
+    const { name, value } = event.target;
+    this.setState(state => ({
       dados: {
         ...state.dados,
-        [name] : value   
+        [name]: value
       }
-    })) 
+    }));
+  };
 
-  }
-
-  onSubmit = () =>{
-    console.log(this.state.dados)
-    // ESCREVER AQUI, O POST. 
-  }
+  onSubmit = data => {
+    console.log(this.state.dados);
+    fetch("http://localhost/projeto_imoveis/api/adm/clientes", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(response => {
+        if (response.status >= 200 && response.status < 300) {
+          return response;
+        } else {
+          console.log("Alguma coisa deu errado!");
+        }
+      })
+      .catch(err => err);
+  };
 
   changeCadastraClientesTitle = event => {
     this.setState({
@@ -55,12 +68,15 @@ class cadastrarClientes extends Component {
       });
   }
 
-  
   render() {
     const { changeCadastraClientesTitle, newValue } = this.props;
     return (
       <div className="page-cadastraClientes">
-        <Form className="formularioClientes" method="post">
+        <Form
+          className="formularioClientes"
+          method="post"
+          onSubmit={this.submitHandler}
+        >
           <div className="header-title">
             <header
               onChange={this.changeCadastraClientesTitle}
@@ -97,7 +113,6 @@ class cadastrarClientes extends Component {
               maxlength="13"
               placeholder="(xxx) xxxxxxx-xx"
               OnKeyPress="formatar('## #####-####', this)"
-              pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
               name="telefone"
               value={this.state.dados.telefone}
               onChange={this.handleChange}
@@ -118,7 +133,12 @@ class cadastrarClientes extends Component {
           </div>
 
           <div className="botao-Cadastrar">
-            <Button type="submit" className="btn btn-primary" onClick={this.onSubmit}>
+            <Button
+              type="submit"
+              className="btn btn-primary"
+              disabled={!this.state.dados}
+              onClick={this.onSubmit}
+            >
               {" "}
               Cadastrar{" "}
             </Button>
