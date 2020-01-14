@@ -32,11 +32,12 @@ class cadastrarClientes extends Component {
     }));
   };
 
-  onSubmit = data => {
-    console.log(this.state.dados);
+  onSubmit = () => {
+    const { dados } = this.state;
+    console.log(dados);
     fetch("http://localhost/projeto_imoveis/api/adm/clientes", {
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify(dados),
       headers: {
         "Content-Type": "application/json"
       }
