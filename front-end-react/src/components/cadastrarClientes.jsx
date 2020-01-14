@@ -41,7 +41,8 @@ class cadastrarClientes extends Component {
         "Content-Type": "application/json"
       }
     })
-      .then(response => {
+      .then(response => { 
+        
         if (response.status >= 200 && response.status < 300) {
           return response;
         } else {
