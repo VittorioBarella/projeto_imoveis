@@ -14,7 +14,7 @@
     "react-helmet": "^5.2.1",
     "react-navigation": "^4.0.7",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1",
+    "react-scripts": "5.0.1",
     "react-table": "^6.10.3",
     "styled-components": "^4.4.0",
     "styled-theming": "^2.2.0"
